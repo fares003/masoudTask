@@ -1,0 +1,47 @@
+
+table.customTable {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #E99F4C;
+  border-style: solid;
+  color: #000000;
+}
+
+table.customTable td, table.customTable th {
+  border-width: 2px;
+  border-color: #E99F4C;
+  border-style: solid;
+  padding: 5px;
+
+}
+
+table.customTable thead {
+  background-color: #E99F4C;
+}
+
+.password-warning {
+  color: red;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.no-users {
+  font-style: italic;
+  color: #888;
+}
+
+.delete-btn {
+  margin-top: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}

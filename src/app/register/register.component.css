@@ -1,0 +1,107 @@
+.register-container {
+
+  max-width: 400px;
+  margin: 0 auto;
+
+}
+.title {
+  color: #264143;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #EDDCD9;
+  height: auto;
+  width: auto;
+  border: 2px solid #264143;
+  border-radius: 20px;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+  border: 2px solid #264143;
+  box-shadow: 3px 4px 0px 1px #E99F4C;
+  width: 290px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+input:focus, .submit-button:focus {
+  transform: translateY(4px);
+  box-shadow: 1px 2px 0px 0px #E99F4C;
+}
+button.submit-button {
+  padding: 15px;
+  margin: 25px 0px;
+  width: 290px;
+  font-size: 15px;
+  background: #DE5499;
+  border-radius: 10px;
+  font-weight: 800;
+  box-shadow: 3px 3px 0px 0px #E99F4C;
+}
+
+button.submit-button:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+form label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+form label input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+form label input:focus + span,form label input:valid + span {
+  top: 40px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.success-message {
+  color: rgb(56, 90, 194);
+  font-weight: bold;
+}
+form label input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,35 @@
+<div class="user-list-container">
+<h2>Registered Users</h2>
+
+<!-- Display a message if there are no users -->
+<p *ngIf="users.length === 0" class="no-users">No users registered yet.</p>
+
+
+
+<table class="customTable">
+  <thead>
+    <tr>
+      <th>user name</th>
+      <th>name</th>
+      <th>delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.username }}</td>
+      <td>{{ user.firstname }} {{ user.lastname }}</td>
+      <td> <button class="delete-btn" (click)="deleteUser(user.username)">Delete</button></td>
+    </tr>
+
+  </tbody>
+</table>
+<!-- Generated at CSSPortal.com -->
+
+
+
+
+
+  <!-- Iterate over users and display each user's details -->
+ 
+
+</div>
